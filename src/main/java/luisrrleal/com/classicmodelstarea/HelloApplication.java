@@ -8,37 +8,19 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.util.Objects;
+
 
 public class HelloApplication extends Application {
-    /*@Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("CLASSIC MODELS");
-        stage.setScene(scene);
-        stage.show();
-    }*/
 
-    private Stage stage;
-    private Scene scene;
     private BorderPane borderPane;
 
-    private VBox vbox1;
-    private Button button1;
-
-    private VBox vbox2;
-    private Button button2;
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage){
 
-        stage = primaryStage;
-        stage.setTitle("Classic Models");
+        primaryStage.setTitle("Classic Models");
 
         //CREATE THE NAVBAR
         //Create elements
@@ -62,7 +44,6 @@ public class HelloApplication extends Application {
         navbar.getChildren().addAll(txt_app_name,spacer,navbar_items);
 
         //CREATE SECTIONS
-        Parent products_section = products_section();
 
         //Add styles to elements
         navbar.getStyleClass().add("navbar");
@@ -83,45 +64,33 @@ public class HelloApplication extends Application {
         btn_clients.setOnAction(event -> switchPanes(clients_section()));
         btn_employees.setOnAction(event -> switchPanes(employees_section()));
 
-        /*
-        borderPane.setLeft(new VBox(new Button("Left")));
-        borderPane.setRight(new VBox(new Button("Right")));
-        borderPane.setBottom(new VBox(new Button("Bottom")));
-         */
+        Scene scene = new Scene(borderPane, 800, 500);
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles/index.css")).toString());
 
 
+        primaryStage.setScene(scene);
 
-        scene = new Scene(borderPane, 800, 500);
-        scene.getStylesheets().add(getClass().getResource("/styles/index.css").toString());
-
-
-        stage.setScene(scene);
-
-        stage.show();
+        primaryStage.show();
     }
 
     private Parent products_section(){
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("products-view.fxml"));
-        Parent root = fxmlLoader.getRoot();
-        return root;
+        return fxmlLoader.getRoot();
     }
 
     private Parent employees_section(){
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("employees-view.fxml"));
-        Parent root = fxmlLoader.getRoot();
-        return root;
+        return fxmlLoader.getRoot();
     }
 
     private Parent clients_section(){
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("clients-view.fxml"));
-        Parent root = fxmlLoader.getRoot();
-        return root;
+        return fxmlLoader.getRoot();
     }
 
     private Parent offices_section(){
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("offices-view.fxml"));
-        Parent root = fxmlLoader.getRoot();
-        return root;
+        return fxmlLoader.getRoot();
     }
 
     // Switch Layout Panes in Center of BorderPane

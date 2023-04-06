@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ClientsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/EmployeesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/OfficesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ProductsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/index.css" afterDir="false" />
+    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="Delete imports dont needed">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea1/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680733762062</updated>
-      <workItem from="1680733764598" duration="9354000" />
+      <workItem from="1680733764598" duration="10264000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1680733954940</created>
@@ -88,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680733954940</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add new things">
+      <created>1680756694715</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680756694715</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Add new things" />
+    <MESSAGE value="Delete imports dont needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete imports dont needed" />
   </component>
 </project>
