@@ -25,8 +25,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'luisrrleal.com.classicmodelstarea1'
-    mainClass = 'luisrrleal.com.classicmodelstarea1.HelloApplication'
+    mainModule = 'luisrrleal.com.classicmodelstarea'
+    mainClass = 'luisrrleal.com.classicmodelstarea.HelloApplication'
 }
 
 javafx {

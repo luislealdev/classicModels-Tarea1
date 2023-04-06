@@ -1,0 +1,26 @@
+.navbar{
+    -fx-flex-direction: row;
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-align-items: center;
+}
+
+.app-name{
+    -fx-font-size: 31px;
+    -fx-border-insets: 5px;
+}
+
+.navbar-button{
+    -fx-padding: 15px;
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-align-items: center;
+    -fx-background-color: #199ed3;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-width: 5px;
+}

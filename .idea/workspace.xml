@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="" />
+    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ClientsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/EmployeesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/OfficesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ProductsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea1/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +32,19 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -36,6 +64,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -47,8 +79,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680733762062</updated>
-      <workItem from="1680733764598" duration="9000" />
+      <workItem from="1680733764598" duration="9354000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1680733954940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680733954940</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>
