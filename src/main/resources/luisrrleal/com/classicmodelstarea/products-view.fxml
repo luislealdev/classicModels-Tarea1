@@ -3,11 +3,71 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="luisrrleal.com.classicmodelstarea.ProductsController"
+            fx:controller="luisrrleal.com.classicmodelstarea.controllers.ProductsController"
             prefHeight="400.0" prefWidth="600.0">
-<Text>
-    PRODUCTS
-</Text>
+    <GridPane alignment="CENTER">
+        <TableView fx:id="tbl_Products" GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <columns>
+                <TableColumn text="Product Code">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="product_code">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Product Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="product_name">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Product Line">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="product_line">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Product Scale">
+                <cellValueFactory>
+                    <PropertyValueFactory property="product_scale">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+                <TableColumn text="Product Vendor">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="product_vendor">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Product Description">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="product_description">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Quantity in stock">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="quantity_in_stock">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Buy Price">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="buy_price">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="MSRP">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="msrp">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </GridPane>
 </AnchorPane>

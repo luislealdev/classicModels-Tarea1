@@ -5,15 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="Delete imports dont needed">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/MySQLConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ClientsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/EmployeesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/OfficesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ProductsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Office.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ClientsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/EmployeesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/EmployeesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/OfficesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/OfficesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/hello-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +45,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -58,6 +76,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/luisleal/Desktop/classicModels-Tarea1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +92,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680733762062</updated>
-      <workItem from="1680733764598" duration="10264000" />
+      <workItem from="1680733764598" duration="10303000" />
+      <workItem from="1680898975908" duration="7370000" />
+      <workItem from="1681017465000" duration="3832000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1680733954940</created>
@@ -89,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680756694715</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Delete imports dont needed">
+      <created>1680757340114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680757340114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

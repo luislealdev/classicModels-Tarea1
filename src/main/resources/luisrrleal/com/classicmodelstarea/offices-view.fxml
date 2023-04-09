@@ -3,11 +3,71 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="luisrrleal.com.classicmodelstarea.OfficesController"
+            fx:controller="luisrrleal.com.classicmodelstarea.controllers.OfficesController"
             prefHeight="400.0" prefWidth="600.0">
-    <Text>
-        PRODUCTS
-    </Text>
+    <GridPane alignment="CENTER">
+        <TableView fx:id="tbl_offices" GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <columns>
+                <TableColumn text="Office Code">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="office_code">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="City">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="city">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phone">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Address line 1">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address_line_1">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Address line 2">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address_line_2">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="State">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="state">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Country">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="country">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Postal Code">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="postal_code">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Territory">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="territory">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </GridPane>
 </AnchorPane>

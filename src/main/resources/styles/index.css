@@ -24,3 +24,8 @@
     -fx-background-radius: 50px;
     -fx-border-width: 5px;
 }
+
+.navbar-button:hover{
+    -fx-background-color: #107ba4;
+    -fx-cursor: hand;
+}
