@@ -6,11 +6,14 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.chart.PieChart?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="luisrrleal.com.classicmodelstarea.controllers.OfficesController"
             prefHeight="400.0" prefWidth="600.0">
-    <GridPane alignment="CENTER">
+    <HBox alignment="CENTER">
         <TableView fx:id="tbl_offices" GridPane.rowIndex="0" GridPane.columnIndex="0">
             <columns>
                 <TableColumn text="Office Code">
@@ -69,5 +72,30 @@
                 </TableColumn>
             </columns>
         </TableView>
-    </GridPane>
+
+        <VBox>
+            <HBox style="-fx-padding: 10px">
+                <!--<Text text="Print" style="-fx-font-size: 30px;"/>-->
+                <VBox>
+                    <Text text="Fast Options" style="-fx-font-size: 40px"/>
+
+                    <Button text="Office's list" fx:id="btn_offices_list">
+                        <graphic>
+                            <FontIcon iconLiteral="fas-store-alt" iconColor="white"/>
+                        </graphic>
+                    </Button>
+
+                    <Button text="Office's employees list" fx:id="btn_offices_employees_list">
+                        <graphic>
+                            <FontIcon iconLiteral="fas-users" iconColor="white"/>
+                        </graphic>
+                    </Button>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Text text="Charts" style="-fx-font-size: 40px"/>
+                    <PieChart fx:id="pieChart" title="Offices and their employees"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </HBox>
 </AnchorPane>

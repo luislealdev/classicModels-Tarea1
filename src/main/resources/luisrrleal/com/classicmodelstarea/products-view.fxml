@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.layout.*?>
-
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="luisrrleal.com.classicmodelstarea.controllers.ProductsController"
-            prefHeight="400.0" prefWidth="600.0">
-    <GridPane alignment="CENTER">
-        <TableView fx:id="tbl_Products" GridPane.rowIndex="0" GridPane.columnIndex="0">
+            >
+    <HBox>
+        <TableView fx:id="tbl_Products">
             <columns>
                 <TableColumn text="Product Code">
                     <cellValueFactory>
@@ -69,5 +73,78 @@
                 </TableColumn>
             </columns>
         </TableView>
-    </GridPane>
+
+        <VBox>
+            <HBox >
+                <Text text="Products"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Add new" fx:id="btn_add_new" styleClass="btn-save">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-plus" iconColor="white"/>
+                    </graphic>
+                </Button>
+
+
+                <!--
+                <Button text="Print" fx:id="btn_print"  styleClass="btn-print">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-print" iconColor="white"/>
+                    </graphic>
+                </Button>
+
+                <Button text="Edit" id="btn_edit"  styleClass="btn-edit">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-pen" iconColor="white"/>
+                    </graphic>
+                </Button>
+-->
+            </HBox>
+            <VBox fx:id="edit_section" visible="false">
+            <GridPane hgap="10" vgap="10" styleClass="input-group">
+
+                <Text text="Product Code" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="form-control" fx:id="tf_product_code"/>
+
+                <Text text="Product Name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="tf_product_name"/>
+
+                <Text text="Product Line" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="tf_product_line"/>
+
+                <Text text="Product Scale" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="tf_product_scale"/>
+
+                <Text text="Product Vendor" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="tf_product_vendor"/>
+
+                <Text text="Product Description" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                <TextArea GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="ta_product_description"/>
+
+                <Text text="Quantity in stock" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="tf_product_quantity"/>
+
+                <Text text="Buy price" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" fx:id="tf_product_price"/>
+
+                <Text text="MSRP" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="8" fx:id="tf_product_msrp"/>
+            </GridPane>
+
+            <HBox>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Delete" fx:id="btn_delete"  styleClass="btn-delete">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-trash" iconColor="white"/>
+                    </graphic>
+                </Button>
+                <Button text="Save" fx:id="btn_save"  styleClass="btn-save">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-save" iconColor="white"/>
+                    </graphic>
+                </Button>
+            </HBox>
+            </VBox>
+
+        </VBox>
+    </HBox>
 </AnchorPane>

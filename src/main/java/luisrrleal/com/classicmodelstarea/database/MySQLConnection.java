@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  * @author niluxer
  */
 public class MySQLConnection {
-    private static Connection conn = null;
+    protected static Connection conn = null;
     private static String dbname = "classicmodels";
     private static String dbport = "3306";
     private static String dbuser = "proyect";

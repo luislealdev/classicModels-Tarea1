@@ -9,14 +9,13 @@ import javafx.scene.paint.Paint;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
+import org.kordamp.bootstrapfx.BootstrapFX;
 import org.kordamp.ikonli.javafx.FontIcon;
 
 import java.io.IOException;
 import java.util.Objects;
 public class HelloApplication extends Application {
-
     private BorderPane borderPane;
-
     @Override
     public void start(Stage primaryStage) throws IOException {
 
@@ -111,8 +110,9 @@ public class HelloApplication extends Application {
             }
         });
 
-        Scene scene = new Scene(borderPane, 800, 500);
+        Scene scene = new Scene(borderPane, 1200, 700);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles/index.css")).toString());
+        scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
 
         primaryStage.setScene(scene);
 

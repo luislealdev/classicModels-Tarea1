@@ -4,30 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="Delete imports dont needed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/MySQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ClientsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/EmployeesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/OfficesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ProductsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Office.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/home-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="A lot of new things">
+      <change afterPath="$PROJECT_DIR$/libs/bootstrapfx-core-0.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/Reports/ClientsReports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/Reports/OfficesReports.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ClientsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/EmployeesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/EmployeesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/OfficesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/OfficesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ClientsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/OfficesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/OfficesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/MySQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ClientsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ClientsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/OfficesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/OfficesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ProductsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ProductsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/employees-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/index.css" afterDir="false" />
@@ -41,6 +35,37 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="classicModels-Tarea1" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="classicModels-Tarea1" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="classicModels-Tarea1" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,20 +95,97 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/luisleal/Desktop/classicModels-Tarea1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/luisleal/Desktop/classicModels-Tarea1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gradle" />
+      <recent name="$PROJECT_DIR$/libs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.classicModels-Tarea1 [run]">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="luisrrleal.com.classicmodelstarea.HelloApplication" />
+      <module name="classicModels-Tarea1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="luisrrleal.com.classicmodelstarea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classicModels-Tarea1 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="classicModels-Tarea1 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.classicModels-Tarea1 [run]" />
+        <item itemvalue="Gradle.classicModels-Tarea1 [build]" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -94,7 +196,11 @@
       <updated>1680733762062</updated>
       <workItem from="1680733764598" duration="10303000" />
       <workItem from="1680898975908" duration="7370000" />
-      <workItem from="1681017465000" duration="3832000" />
+      <workItem from="1681017465000" duration="4147000" />
+      <workItem from="1681080223823" duration="5514000" />
+      <workItem from="1681400735464" duration="10421000" />
+      <workItem from="1681500516214" duration="3236000" />
+      <workItem from="1681598118679" duration="12921000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1680733954940</created>
@@ -117,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680757340114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="A lot of new things">
+      <created>1681023208061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681023208061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +240,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Add new things" />
     <MESSAGE value="Delete imports dont needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete imports dont needed" />
+    <MESSAGE value="A lot of new things" />
+    <option name="LAST_COMMIT_MESSAGE" value="A lot of new things" />
   </component>
 </project>

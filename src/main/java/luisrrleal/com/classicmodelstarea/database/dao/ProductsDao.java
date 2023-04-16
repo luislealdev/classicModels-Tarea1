@@ -20,6 +20,21 @@ public class ProductsDao extends MySQLConnection implements Dao<Product> {
         return Optional.empty();
     }
 
+    @Override
+    public boolean existsItem(String id) {
+        String query = "select * from products where productCode='"+id+"'";
+        try{
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(query);
+            System.out.println(rs.getString("productCode"));
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return false;
+    };
+
     public List<Product> findAll(){
         List<Product> productsList = FXCollections.observableArrayList();
         String query = "select * from products";
@@ -48,6 +63,20 @@ public class ProductsDao extends MySQLConnection implements Dao<Product> {
     @Override
     public boolean save(Product record) {
         return false;
+    }
+
+    @Override
+    public boolean save(String productCode, String productName, String productLine, String productScale, String productVendor, String productDescription, String quantityInStock, String buyPrice, String MSRP) {
+        String query = "INSERT INTO products ('productCode', 'productName', 'productLine' , 'productScale','productVendor','productDescription','quantityInStock','buyPrice','MSRP' )\n" +
+                "VALUES ("+productCode+","+productName+","+ productLine+","+productScale+","+productVendor+","+productDescription+","+quantityInStock+","+Double.parseDouble(buyPrice)+","+Double.parseDouble(MSRP)+");";
+        try {
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(query);
+            System.out.println(rs);
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+        return true;
     }
 
     @Override

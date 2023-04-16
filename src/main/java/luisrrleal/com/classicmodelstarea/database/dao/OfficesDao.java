@@ -21,9 +21,48 @@ public class OfficesDao extends MySQLConnection implements Dao<Office>{
     }
 
     @Override
+    public boolean existsItem(String id) {
+        return false;
+    }
+
+    @Override
     public List<Office> findAll() {
         List<Office> officesList = FXCollections.observableArrayList();
         String query = "select * from offices";
+
+
+        return officesList;
+    }
+
+    public List<Office> getOfficesWithEmployees(){
+        String query = "select a.officeCode, b.employeeNumber, b.firstName, b.lastName, b.extension, b.email, b.officeCode, b.reportsTo, b.jobTitle, " +
+                "from offices a " +
+                "Inner Join employees b on a.officeCode=b.officeCode";
+        return getList(query);
+    }
+
+        @Override
+    public boolean save(Office record) {
+        return false;
+    }
+
+    @Override
+    public boolean save(String productCode, String productName, String productLine, String productScale, String productVendor, String productDescription, String quantityInStock, String buyPrice, String MSRP) {
+        return false;
+    }
+
+    @Override
+    public boolean update(Office record) {
+        return false;
+    }
+
+    @Override
+    public boolean delete(int id) {
+        return false;
+    }
+
+    public List<Office> getList(String query){
+        List<Office> officesList = FXCollections.observableArrayList();
 
         try {
             Statement statement = conn.createStatement();
@@ -45,20 +84,5 @@ public class OfficesDao extends MySQLConnection implements Dao<Office>{
             throw new RuntimeException(e);
         }
         return officesList;
-    }
-
-        @Override
-    public boolean save(Office record) {
-        return false;
-    }
-
-    @Override
-    public boolean update(Office record) {
-        return false;
-    }
-
-    @Override
-    public boolean delete(int id) {
-        return false;
     }
 }

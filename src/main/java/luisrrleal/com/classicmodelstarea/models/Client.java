@@ -58,11 +58,11 @@ public class Client {
         this.contact_last_name = contact_last_name;
     }
 
-    public String getGetContact_first_name() {
+    public String getContact_first_name() {
         return getContact_first_name;
     }
 
-    public void setGetContact_first_name(String getContact_first_name) {
+    public void setContact_first_name(String getContact_first_name) {
         this.getContact_first_name = getContact_first_name;
     }
 

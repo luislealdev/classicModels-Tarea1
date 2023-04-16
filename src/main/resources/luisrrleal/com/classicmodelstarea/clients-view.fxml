@@ -3,11 +3,125 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.chart.BarChart?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="luisrrleal.com.classicmodelstarea.controllers.EmployeesController"
+            fx:controller="luisrrleal.com.classicmodelstarea.controllers.ClientsController"
             prefHeight="400.0" prefWidth="600.0">
-    <Text>
-        CLIENTS
-    </Text>
+<HBox>
+    <TableView fx:id="tbl_clients">
+        <columns>
+            <TableColumn text="Customer number">
+                <cellValueFactory>
+                    <PropertyValueFactory property="customer_number">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="customer_name">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Contact last mame">
+                <cellValueFactory>
+                    <PropertyValueFactory property="contact_last_name">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Contact first mame">
+                <cellValueFactory>
+                    <PropertyValueFactory property="contact_first_name">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Phone">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phone">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Address line 1">
+                <cellValueFactory>
+                    <PropertyValueFactory property="address_line_1">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Address line 2">
+                <cellValueFactory>
+                    <PropertyValueFactory property="address_line_2">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="City">
+                <cellValueFactory>
+                    <PropertyValueFactory property="city">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="State">
+                <cellValueFactory>
+                    <PropertyValueFactory property="state">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Postal code">
+                <cellValueFactory>
+                    <PropertyValueFactory property="postal_code">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Country">
+                <cellValueFactory>
+                    <PropertyValueFactory property="country">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Sales rep employee number">
+                <cellValueFactory>
+                    <PropertyValueFactory property="sales_rep_employee_number">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Credit limit">
+                <cellValueFactory>
+                    <PropertyValueFactory property="credit_limit">
+                    </PropertyValueFactory>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <VBox>
+        <HBox style="-fx-padding: 10px">
+            <VBox>
+                <Text text="Fast Options" style="-fx-font-size: 40px"/>
+                <Button text="Best clients list" fx:id="btn_best_clients_list">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-users" iconColor="white"/>
+                    </graphic>
+                </Button>
+
+                <Button text="Print selected user orders" fx:id="btn_report_orders_selected_client">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-print" iconColor="white"/>
+                    </graphic>
+                </Button>
+
+                <VBox>
+                    <Text text="Graphs" style="-fx-font-size: 40px"/>
+                    <!--<BarChart fx:id="barChart"/>-->
+                </VBox>
+            </VBox>
+
+        </HBox>
+    </VBox>
+</HBox>
 </AnchorPane>
