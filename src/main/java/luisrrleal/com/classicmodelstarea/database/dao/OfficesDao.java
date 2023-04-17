@@ -27,11 +27,8 @@ public class OfficesDao extends MySQLConnection implements Dao<Office>{
 
     @Override
     public List<Office> findAll() {
-        List<Office> officesList = FXCollections.observableArrayList();
         String query = "select * from offices";
-
-
-        return officesList;
+        return getList(query);
     }
 
     public List<Office> getOfficesWithEmployees(){

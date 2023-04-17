@@ -9,95 +9,161 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.control.TextField?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="luisrrleal.com.classicmodelstarea.controllers.ClientsController"
             prefHeight="400.0" prefWidth="600.0">
 <HBox>
-    <TableView fx:id="tbl_clients">
-        <columns>
-            <TableColumn text="Customer number">
-                <cellValueFactory>
-                    <PropertyValueFactory property="customer_number">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Name">
-                <cellValueFactory>
-                    <PropertyValueFactory property="customer_name">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Contact last mame">
-                <cellValueFactory>
-                    <PropertyValueFactory property="contact_last_name">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Contact first mame">
-                <cellValueFactory>
-                    <PropertyValueFactory property="contact_first_name">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Phone">
-                <cellValueFactory>
-                    <PropertyValueFactory property="phone">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Address line 1">
-                <cellValueFactory>
-                    <PropertyValueFactory property="address_line_1">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Address line 2">
-                <cellValueFactory>
-                    <PropertyValueFactory property="address_line_2">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="City">
-                <cellValueFactory>
-                    <PropertyValueFactory property="city">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="State">
-                <cellValueFactory>
-                    <PropertyValueFactory property="state">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Postal code">
-                <cellValueFactory>
-                    <PropertyValueFactory property="postal_code">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Country">
-                <cellValueFactory>
-                    <PropertyValueFactory property="country">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
+    <VBox>
+        <TableView fx:id="tbl_clients">
+            <columns>
+                <TableColumn text="Customer number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="customer_number">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="customer_name">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Contact last name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="contact_last_name">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Contact first name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="contact_first_name">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phone">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Address line 1">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address_line_1">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Address line 2">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address_line_2">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="City">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="city">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="State">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="state">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Postal code">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="postal_code">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Country">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="country">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
 
-            <TableColumn text="Sales rep employee number">
-                <cellValueFactory>
-                    <PropertyValueFactory property="sales_rep_employee_number">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
+                <TableColumn text="Sales rep employee number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="sales_rep_employee_number">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
 
-            <TableColumn text="Credit limit">
-                <cellValueFactory>
-                    <PropertyValueFactory property="credit_limit">
-                    </PropertyValueFactory>
-                </cellValueFactory>
-            </TableColumn>
-        </columns>
-    </TableView>
+                <TableColumn text="Credit limit">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="credit_limit">
+                        </PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        <GridPane hgap="10" vgap="10" styleClass="input-group" fx:id="gp_edit_section">
+            <Text text="Customer number" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="form-control" fx:id="tf_customer_number"/>
+
+            <Text text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="tf_customer_name"/>
+
+            <Text text="Contact last name" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="tf_contact_last_name"/>
+
+            <Text text="Contact first name" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="tf_contact_first_name"/>
+
+            <Text text="Phone" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="tf_phone"/>
+
+            <Text text="Address line 1" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="tf_address_line_1"/>
+
+            <Text text="Address line 2" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="tf_address_line_2"/>
+
+            <Text text="City" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="0" fx:id="tf_city"/>
+
+            <Text text="State" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="tf_state"/>
+
+            <Text text="Postal code" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="tf_postal_code"/>
+
+            <Text text="Country" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="tf_country"/>
+
+            <Text text="Sales rep employee number" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="4" fx:id="tf_sales_rep_employee_number"/>
+
+            <Text text="Credit limit" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="5" fx:id="tf_credit_limit"/>
+
+            <HBox GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.columnSpan="2">
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Delete" fx:id="btn_delete"  styleClass="btn-delete">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-trash" iconColor="white"/>
+                    </graphic>
+                </Button>
+                <Button text="Save" fx:id="btn_save"  styleClass="btn-save">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-save" iconColor="white"/>
+                    </graphic>
+                </Button>
+            </HBox>
+
+            <Button text="Print selected user orders" fx:id="btn_report_orders_selected_client" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                <graphic>
+                    <FontIcon iconLiteral="fas-print" iconColor="white"/>
+                </graphic>
+            </Button>
+
+        </GridPane>
+
+    </VBox>
 
     <VBox>
         <HBox style="-fx-padding: 10px">
@@ -109,9 +175,9 @@
                     </graphic>
                 </Button>
 
-                <Button text="Print selected user orders" fx:id="btn_report_orders_selected_client">
+                <Button text="Add client" fx:id="btn_add_client">
                     <graphic>
-                        <FontIcon iconLiteral="fas-print" iconColor="white"/>
+                        <FontIcon iconLiteral="fas-plus" iconColor="white"/>
                     </graphic>
                 </Button>
 

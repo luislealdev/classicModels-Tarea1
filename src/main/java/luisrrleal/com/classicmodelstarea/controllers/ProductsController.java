@@ -4,16 +4,14 @@ import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import luisrrleal.com.classicmodelstarea.database.dao.ProductsDao;
 import luisrrleal.com.classicmodelstarea.models.Product;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class ProductsController implements Initializable {
@@ -24,7 +22,7 @@ public class ProductsController implements Initializable {
     @FXML VBox edit_section;
     @FXML TextField tf_product_code, tf_product_name, tf_product_line,tf_product_scale,tf_product_vendor,tf_product_quantity, tf_product_price, tf_product_msrp;
     @FXML TextArea ta_product_description;
-    @FXML Button btn_add_new, btn_save;
+    @FXML Button btn_add_new, btn_save, btn_delete;
 
     public void setProducts(){
         tbl_Products.setItems(FXCollections.observableArrayList(productsDao.findAll()));
@@ -57,15 +55,33 @@ public class ProductsController implements Initializable {
 
     public void add_save_action(){
         btn_save.setOnAction(event -> {
-            // Revisar si existe el id, si si es una actualización, sino una creación
                 if(is_adding_new){
-                   // ProductsDao.save(tf_product_code.getText(), tf_product_name.getText(), tf_product_line.getText(), tf_product_scale.getText(), tf_product_vendor.getText(),ta_product_description.getText(),tf_product_quantity.getText(),tf_product_price.getText(),tf_product_msrp.getText());
+                    try {
+                        productsDao.save(tf_product_code.getText(), tf_product_name.getText(), tf_product_line.getText(), tf_product_scale.getText(), tf_product_vendor.getText(),ta_product_description.getText(),tf_product_quantity.getText(),tf_product_price.getText(),tf_product_msrp.getText());
+                        tbl_Products.getItems().add(new Product(tf_product_code.getText(), tf_product_name.getText(), tf_product_line.getText(), tf_product_scale.getText(), tf_product_vendor.getText(),ta_product_description.getText(),Integer.parseInt(tf_product_quantity.getText()),Double.parseDouble(tf_product_price.getText()),Double.parseDouble(tf_product_msrp.getText())));
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+                    showMessage("New product","Product added correctly");
+                    setProducts();
                 }
-                /*else{
-                    productsDao.update();
-                }*/
-            // Hacer actualización o creación
+                else{
+                    try {
+                        productsDao.update(tf_product_code.getText(), tf_product_name.getText(), tf_product_line.getText(), tf_product_scale.getText(), tf_product_vendor.getText(),ta_product_description.getText(),tf_product_quantity.getText(),tf_product_price.getText(),tf_product_msrp.getText());
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+                    showMessage("Updated","Product updated correctly");
+                    setProducts();
+                }
         });
+    }
+
+    private void showMessage(String title, String message){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setContentText(message);
+        alert.show();
     }
 
     private void clear_table_view(){
@@ -85,5 +101,15 @@ public class ProductsController implements Initializable {
         add_select_method();
         set_add_new_action();
         add_save_action();
+        btn_delete.setOnAction(event -> {
+            try {
+                productsDao.delete(tf_product_code.getText());
+                setProducts();
+                showMessage("Removed", "Product removed correctly");
+                clear_table_view();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 }

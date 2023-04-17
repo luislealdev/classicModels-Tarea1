@@ -5,48 +5,55 @@ import luisrrleal.com.classicmodelstarea.database.MySQLConnection;
 import luisrrleal.com.classicmodelstarea.models.Client;
 import luisrrleal.com.classicmodelstarea.models.Office;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
 
-public class ClientsDao extends MySQLConnection implements Dao<Client>{
+public class ClientsDao extends MySQLConnection{
 
-    @Override
     public Optional<Client> findById(int id) {
         return Optional.empty();
     }
 
-    @Override
-    public boolean existsItem(String id) {
-        return false;
-    }
-
-    @Override
     public List<Client> findAll() {
         String query = "select * from customers";
         return getList(query);
     }
 
-    @Override
-    public boolean save(Client record) {
-        return false;
+    public boolean save(String customerNumber, String customerName, String contactLastName, String contactFirstName, String phone,
+                        String addressLine1, String addressLine2, String city, String state, String postalCode, String country, String salesRepEmployeeNumber, String creditLimit ) throws SQLException {
+
+        String query = "Insert into customers () values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        PreparedStatement ps = conn.prepareStatement(query);
+        ps.setInt(1, Integer.parseInt(customerNumber));
+        ps.setString(2, customerName);
+        ps.setString(3, contactLastName);
+        ps.setString(4, contactFirstName);
+        ps.setString(5, phone);
+        ps.setString(6, addressLine1);
+        ps.setString(7, addressLine2);
+        ps.setString(8, city);
+        ps.setString(9, state);
+        ps.setString(10, postalCode);
+        ps.setString(11, country);
+        ps.setInt(12, Integer.parseInt(salesRepEmployeeNumber));
+        ps.setDouble(13, Double.parseDouble(creditLimit));
+        ps.execute();
+        return true;
     }
 
-    @Override
-    public boolean save(String productCode, String productName, String productLine, String productScale, String productVendor, String productDescription, String quantityInStock, String buyPrice, String MSRP) {
-        return false;
-    }
-
-    @Override
     public boolean update(Client record) {
         return false;
     }
 
-    @Override
-    public boolean delete(int id) {
-        return false;
+    public boolean delete(String customer_number) throws SQLException {
+        String query = "DELETE FROM customers WHERE customerNumber="+customer_number+";";
+        PreparedStatement ps = conn.prepareStatement(query);
+        ps.execute();
+        return true;
     }
 
     public  List<Client> findTwentyBestClients(){

@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="A lot of new things">
-      <change afterPath="$PROJECT_DIR$/libs/bootstrapfx-core-0.4.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/Reports/ClientsReports.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/Reports/OfficesReports.java" afterDir="false" />
+    <list default="true" id="b1b1a377-092b-4dd0-a7e5-e13bc1aa7d01" name="Changes" comment="A lot of new things, cool">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/Reports/ClientsReports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/Reports/ClientsReports.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ClientsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/OfficesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/OfficesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/controllers/ProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/MySQLConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ClientsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ClientsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/Dao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/OfficesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/OfficesDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ProductsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/database/dao/ProductsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/luisrrleal/com/classicmodelstarea/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/clients-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/offices-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/luisrrleal/com/classicmodelstarea/products-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +191,8 @@
       <workItem from="1681080223823" duration="5514000" />
       <workItem from="1681400735464" duration="10421000" />
       <workItem from="1681500516214" duration="3236000" />
-      <workItem from="1681598118679" duration="12921000" />
+      <workItem from="1681598118679" duration="13119000" />
+      <workItem from="1681658558265" duration="13225000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1680733954940</created>
@@ -230,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681023208061</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="A lot of new things, cool">
+      <created>1681624743888</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681624743889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +240,7 @@
     <MESSAGE value="Add new things" />
     <MESSAGE value="Delete imports dont needed" />
     <MESSAGE value="A lot of new things" />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of new things" />
+    <MESSAGE value="A lot of new things, cool" />
+    <option name="LAST_COMMIT_MESSAGE" value="A lot of new things, cool" />
   </component>
 </project>

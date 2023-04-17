@@ -67,6 +67,7 @@ public class OfficesController implements Initializable {
         btn_offices_list.setOnAction(event -> {
             generate_offices_list_report();
         });
+
         setOffices();
 
         ObservableList<PieChart.Data> pieChartData =

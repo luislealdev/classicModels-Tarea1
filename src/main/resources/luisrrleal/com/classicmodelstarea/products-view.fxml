@@ -137,7 +137,7 @@
                         <FontIcon iconLiteral="fas-trash" iconColor="white"/>
                     </graphic>
                 </Button>
-                <Button text="Save" fx:id="btn_save"  styleClass="btn-save">
+                <Button text="Save" fx:id="btn_save" styleClass="btn-save">
                     <graphic>
                         <FontIcon iconLiteral="fas-save" iconColor="white"/>
                     </graphic>

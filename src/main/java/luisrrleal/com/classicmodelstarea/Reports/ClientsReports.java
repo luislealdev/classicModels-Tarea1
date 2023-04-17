@@ -55,6 +55,39 @@ public class ClientsReports {
         document.close();
     }
 
+    public void generate_client_orders_report_pdf(String dest, String client_name) throws IOException{
+        //Initialize PDF writer
+        PdfWriter writer = new PdfWriter(dest);
+
+        //Initialize PDF document
+        PdfDocument pdf = new PdfDocument(writer);
+
+        // Initialize document
+        Document document = new Document(pdf, PageSize.A4.rotate());
+        document.setMargins(20, 20, 20, 20);
+
+        PdfFont font = PdfFontFactory.createFont(StandardFonts.HELVETICA);
+        PdfFont bold = PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD);
+        Table table = new Table(UnitValue.createPercentArray(new float[]{3,3,3,3,3}))
+                .useAllAvailableWidth();
+
+        process(table, null, bold, true);
+        for(Client client: clientsDao.findTwentyBestClients()) {
+            process(table, client, font, false);
+        }
+        Paragraph textDept = new Paragraph(client_name+"'s orders");
+        textDept.setTextAlignment(TextAlignment.CENTER);
+        textDept.setFont(bold);
+        textDept.setFontSize(20);
+        textDept.setFontColor(ColorConstants.BLACK);
+        document.add(textDept);
+
+        document.add(table);
+
+        //Close document
+        document.close();
+    }
+
     public void process(Table table, Client client, PdfFont font, boolean isHeader){
         if(isHeader){
             table.addHeaderCell(new Cell().add(new Paragraph("CUSTOMER NAME").setFont(font)));
